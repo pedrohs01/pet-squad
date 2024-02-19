@@ -2,4 +2,51 @@
  Folha de esilo do site SecurityPet.com
  @author Pedro h santos
  */
- 
+
+ /** CSS RESER */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+} 
+
+/* importar fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Protest+Strike&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Protest+Riot&family=Protest+Strike&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1em;
+}
+
+/* Smartphone portrait          >>>>>>>>>>>>> */
+
+/* Smartphone landscape         >>>>>>>>>>>>> */
+@media (min-width: 576px) {
+   
+}
+
+/* Tablet portrait              >>>>>>>>>>>>> */
+@media (min-width: 768px) {
+   
+}
+
+/* Tablet landscape             >>>>>>>>>>>>> */
+@media (min-width: 992px) {
+    
+}
+
+/* PCs ou notebooks HD          >>>>>>>>>>>>> */
+@media (min-width: 1200px) {
+    
+}
+
+/* PCs ou notebooks Full HD +   >>>>>>>>>>>>> */
+@media (min-width: 1400px) {
+    
+}
