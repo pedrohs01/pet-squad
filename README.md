@@ -1,3 +1,9 @@
+![GitHub License](https://img.shields.io/github/license/pedrohs01/pet-squad)
+![Website](https://img.shields.io/website?url=https%3A%2F%2Fpedrohs01.github.io%2Fpet-squad%2F)
+![W3C Validation](https://img.shields.io/w3c-validation/html?targetUrl=https%3A%2F%2Fpedrohs01.github.io%2Fpet-squad%2F)
+
+
+
 # Pet Squad
 Este repositorio hospeda o proejto do site petsquad.com.br
 ## Autor
