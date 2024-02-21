@@ -3,50 +3,100 @@
  @author Pedro h santos
  */
 
- /** CSS RESER */
+/* importar fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Protest+Strike&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Protest+Riot&family=Protest+Strike&display=swap');
+
+:root {
+    --lightpink: #90f7b7;
+    --pretolayout: #000000;
+   }
+
+ /* CSS RESET */
 * {
     margin: 0;
     padding: 0;
     border: 0;
 } 
-
-/* importar fonts */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Protest+Strike&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Protest+Riot&family=Protest+Strike&display=swap');
+/* LAYOUT >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Protest Riot", sans-serif;
     font-size: 1em;
 }
 
+.container {
+    margin: 0 auto;
+    padding: 50px 15px 50px 15px;
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+  }
+
 /* Smartphone portrait          >>>>>>>>>>>>> */
+/************* Cabeçalho **********************/
+#logo img {
+    width: 150px;
+    height: 150px;
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--lightpink);
+    color: var(--pretolayout);
+    text-align: center;
+  }
+
+#social {
+    margin-bottom: 25px;
+}  
 
 /* Smartphone landscape         >>>>>>>>>>>>> */
 @media (min-width: 576px) {
-   
+    .container {
+        max-width: 540px;
+    }
+    .flex{
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+      }
+    #social {
+        margin: 0px;
+    }
 }
 
 /* Tablet portrait              >>>>>>>>>>>>> */
 @media (min-width: 768px) {
-   
+    .container {
+        max-width: 720px;
+    }
 }
 
 /* Tablet landscape             >>>>>>>>>>>>> */
 @media (min-width: 992px) {
-    
+    .container {
+        max-width: 960px;
+    }
 }
 
 /* PCs ou notebooks HD          >>>>>>>>>>>>> */
 @media (min-width: 1200px) {
-    
+    .container {
+        max-width: 1140px;
+    }
 }
 
 /* PCs ou notebooks Full HD +   >>>>>>>>>>>>> */
 @media (min-width: 1400px) {
-    
+    .container {
+        max-width: 1360px;
+    }
 }
