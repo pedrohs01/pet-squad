@@ -9,8 +9,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Protest+Riot&family=Protest+Strike&display=swap');
 
 :root {
-    --lightpink: #90f7b7;
+    --lightgraw: #90f7b7;
     --pretolayout: #000000;
+    --backgroundcard: #f1f3f4;
+    --bordalayout: #000000; 
+    --corleyute: #f80000;
+    --cortexto: #434343;
    }
 
  /* CSS RESET */
@@ -35,21 +39,64 @@ body {
     padding: 50px 15px 50px 15px;
 }
 
-.flex{
+.flex, .flexmenu{
     display: flex;
+    justify-content: space-between;
+}
+
+.flex {
     flex-direction: column;
   }
+/* cartão */
+.card {
+    margin-top: 30px;
+    width: 338px;
+    height: 520px;
+    background-color: var(--backgroundcard);
+    border: 2px solid var(--pretolayout);
+    border-radius: 25px;
+    text-align: center;
+}
+
+.card img {
+    border-radius: 25px 25px 0px 0px;
+}
+
+.card h3 {
+    margin: 15px 30px 0px 30px;
+}
+
+.card p {
+    padding: 10px 30px 50px 30px;
+    text-align: left;
+    color: var(--cortexto);
+}
+
+.button {
+    text-decoration: none;
+    background-color: var(--corleyute);
+    color: #f1f3f4;
+    padding: 10px 80px;
+    border-radius: 25px;
+    font-size: 1.2em;
+    font-weight: 700;
+}
 
 /* Smartphone portrait          >>>>>>>>>>>>> */
 /************* Cabeçalho **********************/
+header{
+    height: 80px;
+}
+
 #logo img {
     width: 150px;
     height: 150px;
+    margin: 10px 0px 0px 10px;
 }
 
 /* FOOTER */
 footer {
-    background-color: var(--lightpink);
+    background-color: var(--lightgraw);
     color: var(--pretolayout);
     text-align: center;
   }
@@ -60,9 +107,16 @@ footer {
 
 /* Smartphone landscape         >>>>>>>>>>>>> */
 @media (min-width: 576px) {
+    /*Cabeçalho*/
     .container {
         max-width: 540px;
     }
+
+    header{
+        max-width: 540px;
+        margin: 0 auto;
+    }
+
     .flex{
         flex-direction: row-reverse;
         justify-content: space-between;
@@ -78,6 +132,20 @@ footer {
     .container {
         max-width: 720px;
     }
+
+    /*Cabeçalho*/
+    header{
+        max-width: 720px;
+        margin: 0 auto;
+        height: 100px;
+    }
+
+    #logo img {
+        width: 200px;
+        height: 200px;
+        margin: 10px 0px 0px 10px;
+    }
+
 }
 
 /* Tablet landscape             >>>>>>>>>>>>> */
@@ -85,6 +153,19 @@ footer {
     .container {
         max-width: 960px;
     }
+
+    header{
+        max-width: 720px;
+        margin: 0 auto;
+        height: 100px;
+    }
+
+    #logo img {
+        width: 150px;
+        height: 150px;
+        margin: 10px 0px 0px 10px;
+    }
+
 }
 
 /* PCs ou notebooks HD          >>>>>>>>>>>>> */
@@ -92,6 +173,19 @@ footer {
     .container {
         max-width: 1140px;
     }
+
+    header{
+        max-width: 720px;
+        margin: 0 auto;
+        height: 100px;
+    }
+
+    #logo img {
+        width: 150px;
+        height: 150px;
+        margin: 10px 0px 0px 10px;
+    }
+    
 }
 
 /* PCs ou notebooks Full HD +   >>>>>>>>>>>>> */
@@ -99,4 +193,17 @@ footer {
     .container {
         max-width: 1360px;
     }
+
+    header{
+        max-width: 720px;
+        margin: 0 auto;
+        height: 100px;
+    }
+
+    #logo img {
+        width: 250px;
+        height: 250px;
+        margin: 10px 0px 0px 10px;
+    }
+
 }
