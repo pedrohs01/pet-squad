@@ -49,11 +49,11 @@ body {
   }
 /* cartão */
 .card {
-    margin-top: 30px;
+    margin-top: 50px;
     width: 338px;
     height: 520px;
     background-color: var(--backgroundcard);
-    border: 2px solid var(--pretolayout);
+    border: 1px solid var(--pretolayout);
     border-radius: 25px;
     text-align: center;
 }
