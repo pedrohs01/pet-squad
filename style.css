@@ -11,7 +11,7 @@
 :root {
     --lightgraw: #90f7b7;
     --pretolayout: #000000;
-    --backgroundcard: #f1f3f4;
+    --backgroundcard: #ffffff;
     --bordalayout: #000000; 
     --corleyute: #f80000;
     --cortexto: #434343;
@@ -82,6 +82,13 @@ body {
     font-weight: 700;
 }
 
+/* topo */
+#topo {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
 /* Smartphone portrait          >>>>>>>>>>>>> */
 /************* Cabeçalho **********************/
 header{
@@ -92,6 +99,45 @@ header{
     width: 150px;
     height: 150px;
     margin: 10px 0px 0px 10px;
+}
+
+#check {
+    display: none;
+}
+
+label {
+    font-size: 3em;
+    font-weight: 600;
+    top: 10px;
+    position: fixed;
+    right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    background-color: rgba(67, 67, 67, 0.9);
+    height: 100vh;
+    position: fixed;
+    top: 80px;
+    right: -70%;
+    width: 70%;
+    transition: all 0.5s;
+}
+
+/* Ativar o chackbox */
+#check:checked~ul {
+    right: 0;
+}
+
+nav ul li {
+    border-bottom: 0.5px solid var(--backgroundcard);
+    text-align: right;
+    padding: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--backgroundcard);
 }
 
 /* FOOTER */
@@ -146,6 +192,19 @@ footer {
         margin: 10px 0px 0px 10px;
     }
 
+    nav ul {
+        top: 100px;
+        right: -50%;
+        width: 50%;
+    }
+
+    label {
+        font-size: 4em;
+        top: 25px;
+        height: 5px;
+        color: rgba(67, 67, 67, 0.9);
+    } 
+
 }
 
 /* Tablet landscape             >>>>>>>>>>>>> */
@@ -174,10 +233,10 @@ footer {
         max-width: 1140px;
     }
 
+    /*Cabeçalho*/
     header{
-        max-width: 720px;
+        max-width: 1140px;
         margin: 0 auto;
-        height: 100px;
     }
 
     #logo img {
@@ -185,7 +244,32 @@ footer {
         height: 150px;
         margin: 10px 0px 0px 10px;
     }
-    
+
+    label {
+    display: none;
+   }
+
+   nav ul {
+       width: 100%;
+       position: static;
+       height: auto;
+       background-color: var(--backgroundcard);
+       margin-top: 50px;
+   }
+
+   nav ul li {
+       border: 0;
+       float: right;
+   }
+   
+   nav ul li a {
+       color: var(--bordalayout);
+   }
+
+   nav ul li a:hover {
+    color: var(--lightgraw);
+   }
+
 }
 
 /* PCs ou notebooks Full HD +   >>>>>>>>>>>>> */
@@ -195,7 +279,7 @@ footer {
     }
 
     header{
-        max-width: 720px;
+        max-width: 1360px;
         margin: 0 auto;
         height: 100px;
     }
