@@ -96,8 +96,8 @@ header{
 }
 
 #logo img {
-    width: 150px;
-    height: 150px;
+    width: 265px;
+    height: 60.88px;
     margin: 10px 0px 0px 10px;
 }
 
@@ -187,9 +187,9 @@ footer {
     }
 
     #logo img {
-        width: 200px;
-        height: 200px;
-        margin: 10px 0px 0px 10px;
+        width: 353.34px;
+        height: 81.2px;
+        margin: 10px 0px 0px 0px;
     }
 
     nav ul {
@@ -240,9 +240,8 @@ footer {
     }
 
     #logo img {
-        width: 150px;
-        height: 150px;
-        margin: 10px 0px 0px 10px;
+        width: 424px;
+        height: 97.4px;
     }
 
     label {
@@ -285,9 +284,8 @@ footer {
     }
 
     #logo img {
-        width: 250px;
-        height: 250px;
-        margin: 10px 0px 0px 10px;
+        width: 530px;
+        height: 121.75px;
     }
 
 }
