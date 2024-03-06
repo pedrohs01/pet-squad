@@ -160,7 +160,7 @@ main {
 }
 
 main h1,h2 {
-    color: var(--pretolayout);
+    color: darkorange;
 }
 
 main h1 {
