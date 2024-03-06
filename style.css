@@ -82,6 +82,16 @@ body {
     font-weight: 700;
 }
 
+.button2 {
+    text-decoration: none;
+    background-color: var(--lightgraw);
+    color: var(--backgroundcard);
+    padding: 10px 50px;
+    border-radius: 25px;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
 /* topo */
 #topo {
     position: fixed;
@@ -140,6 +150,27 @@ nav ul li a {
     color: var(--backgroundcard);
 }
 
+/*Baner*/
+main {
+    background: url(img/baner2.jpeg);
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+main h1,h2 {
+    color: var(--pretolayout);
+}
+
+main h1 {
+    margin-bottom: 125px;
+}
+
+main h2 {
+    display: none;
+}
+
 /* FOOTER */
 footer {
     background-color: var(--lightgraw);
@@ -170,6 +201,15 @@ footer {
       }
     #social {
         margin: 0px;
+    }
+
+    /*baner*/
+    main {
+        height: 100vh;
+    } 
+
+    main h1 {
+        font-size: 3em;
     }
 }
 
@@ -204,6 +244,23 @@ footer {
         height: 5px;
         color: rgba(67, 67, 67, 0.9);
     } 
+
+    /*baner*/
+    main h1 {
+        font-size: 3em;
+        margin-bottom: 25;
+    }
+
+    main h2 {
+        display: block;
+        font-size: 2em;
+        margin-bottom: 50px;
+        
+    }
+
+    main a {
+        margin-top: 50px;
+    }
 
 }
 
@@ -268,6 +325,24 @@ footer {
    nav ul li a:hover {
     color: var(--lightgraw);
    }
+
+   /*baner*/
+   main {
+    height: 75vh;
+} 
+   
+   main h1 {
+    font-size: 3em;
+    margin: 25px;
+    text-shadow: #ffffff 0.01em 0.01em 0.01em;
+}
+
+main h2 {
+    display: block;
+    text-shadow: #ffffff 0.01em 0.01em 0.01em;
+}
+
+
 
 }
 
