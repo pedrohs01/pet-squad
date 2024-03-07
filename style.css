@@ -12,17 +12,18 @@
     --lightgraw: #3ebdff;
     --pretolayout: #000000;
     --backgroundcard: #ffffff;
-    --bordalayout: #000000; 
+    --bordalayout: #000000;
     --corleyute: #f80000;
     --cortexto: #434343;
-   }
+}
 
- /* CSS RESET */
+/* CSS RESET */
 * {
     margin: 0;
     padding: 0;
     border: 0;
-} 
+}
+
 /* LAYOUT >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
 html {
@@ -39,14 +40,16 @@ body {
     padding: 50px 15px 50px 15px;
 }
 
-.flex, .flexmenu{
+.flex,
+.flexmenu {
     display: flex;
     justify-content: space-between;
 }
 
 .flex {
     flex-direction: column;
-  }
+}
+
 /* cartão */
 .card {
     margin-top: 50px;
@@ -97,11 +100,12 @@ body {
     position: fixed;
     right: 10px;
     bottom: 10px;
+    z-index: 2;
 }
 
 /* Smartphone portrait          >>>>>>>>>>>>> */
 /************* Cabeçalho **********************/
-header{
+header {
     height: 80px;
 }
 
@@ -132,6 +136,7 @@ nav ul {
     right: -70%;
     width: 70%;
     transition: all 0.5s;
+    z-index: 1;
 }
 
 /* Ativar o chackbox */
@@ -152,22 +157,33 @@ nav ul li a {
 
 /*Baner*/
 main {
-    background: url(img/baner2.jpeg);
-    height: 50vh;
-    background-size: cover;
-    background-position: center;
+    position: relative;
+    height: 65vh;
+}
+
+main video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#baner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
 }
 
-main h1,h2 {
-    color: darkorange;
+#baner h1,
+h2 {
+    color: var(--lightgraw);
+    font-size: 1.9em;
+    margin-bottom: 120px;
+    font-weight: 500;
 }
 
-main h1 {
-    margin-bottom: 125px;
-}
-
-main h2 {
+#baner h2 {
     display: none;
 }
 
@@ -176,42 +192,48 @@ footer {
     background-color: var(--lightgraw);
     color: var(--pretolayout);
     text-align: center;
-  }
+}
 
 #social {
     margin-bottom: 25px;
-}  
+}
 
 /* Smartphone landscape         >>>>>>>>>>>>> */
 @media (min-width: 576px) {
+
     /*Cabeçalho*/
     .container {
         max-width: 540px;
     }
 
-    header{
+    header {
         max-width: 540px;
         margin: 0 auto;
     }
 
-    .flex{
+    .flex {
         flex-direction: row-reverse;
         justify-content: space-between;
         align-items: center;
-      }
+    }
+
     #social {
         margin: 0px;
     }
 
-    /*baner*/
-    main {
-        height: 100vh;
-    } 
-
-    main h1 {
-        font-size: 3em;
+    /*BANER*/
+    #baner h1 {
+        display: block;
+        font-weight: 500;
+        font-size: 1.9em;
     }
+
+    #social {
+        margin: 0;
+    }
+
 }
+
 
 /* Tablet portrait              >>>>>>>>>>>>> */
 @media (min-width: 768px) {
@@ -220,7 +242,7 @@ footer {
     }
 
     /*Cabeçalho*/
-    header{
+    header {
         max-width: 720px;
         margin: 0 auto;
         height: 100px;
@@ -243,19 +265,17 @@ footer {
         top: 25px;
         height: 5px;
         color: rgba(67, 67, 67, 0.9);
-    } 
+    }
 
-    /*baner*/
-    main h1 {
-        font-size: 3em;
-        margin-bottom: 25;
+    #baner h1 {
+        font-size: 2.2em;
     }
 
     main h2 {
         display: block;
         font-size: 2em;
         margin-bottom: 50px;
-        
+
     }
 
     main a {
@@ -270,7 +290,7 @@ footer {
         max-width: 960px;
     }
 
-    header{
+    header {
         max-width: 720px;
         margin: 0 auto;
         height: 100px;
@@ -291,7 +311,7 @@ footer {
     }
 
     /*Cabeçalho*/
-    header{
+    header {
         max-width: 1140px;
         margin: 0 auto;
     }
@@ -302,45 +322,50 @@ footer {
     }
 
     label {
-    display: none;
-   }
+        display: none;
+    }
 
-   nav ul {
-       width: 100%;
-       position: static;
-       height: auto;
-       background-color: var(--backgroundcard);
-       margin-top: 50px;
-   }
+    nav ul {
+        width: 100%;
+        position: static;
+        height: auto;
+        background-color: var(--backgroundcard);
+        margin-top: 50px;
+    }
 
-   nav ul li {
-       border: 0;
-       float: right;
-   }
-   
-   nav ul li a {
-       color: var(--bordalayout);
-   }
+    nav ul li {
+        border: 0;
+        float: right;
+    }
 
-   nav ul li a:hover {
-    color: var(--lightgraw);
-   }
+    nav ul li a {
+        color: var(--bordalayout);
+        font-size: 1.5em;
+    }
 
-   /*baner*/
-   main {
-    height: 75vh;
-} 
-   
-   main h1 {
-    font-size: 3em;
-    margin: 25px;
-    text-shadow: #ffffff 0.01em 0.01em 0.01em;
-}
+    nav ul li a:hover {
+        color: var(--lightgraw);
+    }
 
-main h2 {
-    display: block;
-    text-shadow: #ffffff 0.01em 0.01em 0.01em;
-}
+    /*baner*/
+    #baner h2 {
+        display: block;
+    }
+
+    main {
+        margin-top: 50px;
+    }
+
+    main h1 {
+        font-size: 3em;
+        margin: 25px;
+        text-shadow: #ffffff 0.01em 0.01em 0.01em;
+    }
+
+    main h2 {
+        display: block;
+        text-shadow: #ffffff 0.01em 0.01em 0.01em;
+    }
 
 
 
@@ -352,7 +377,7 @@ main h2 {
         max-width: 1360px;
     }
 
-    header{
+    header {
         max-width: 1360px;
         margin: 0 auto;
         height: 100px;
