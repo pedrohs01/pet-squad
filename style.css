@@ -176,7 +176,7 @@ main video {
 }
 
 .baner h1 {
-    color: var(--lightgraw);
+    color: var(--backgroundcard);
     font-size: 1.5em;
     margin-bottom: 120px;
     font-weight: 500;
@@ -270,10 +270,10 @@ footer {
     .baner {
         display: block;
         position: absolute;
-        bottom: 0;
+        top: 100px;
         background: rgba(0, 0, 0, 0.5);
         width: 100%;
-        color: var(--lightgraw);
+        color: var(--backgroundcard);
     }
 
     .baner h1 {
