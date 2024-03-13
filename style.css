@@ -63,6 +63,7 @@ body {
 
 .card img {
     border-radius: 25px 25px 0px 0px;
+    
 }
 
 .card h3 {
@@ -345,7 +346,7 @@ footer {
 
     nav ul li {
         border: 0;
-        float: right;
+        float: left;
     }
 
     nav ul li a {
