@@ -220,6 +220,10 @@ main video {
 }
 
 /*PROJETOS*/
+#projetos {
+    background: url(img/fundo2.jpeg);
+}
+
 #projetos h2 {
     text-align: center;
 }
