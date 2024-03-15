@@ -46,8 +46,19 @@ body {
     justify-content: space-between;
 }
 
+.FlexIntro {
+    display: flex;
+    align-items: center;
+}
+
 .flex {
     flex-direction: column;
+}
+
+.FlexCard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 /* cartão */
@@ -188,6 +199,37 @@ main video {
     display: none;
 }
 
+/* Introdução */
+#intro {
+    background: url(img/fundo.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+#destaqueIntro {
+    display: none;
+}
+
+#textoIntro {
+    color: var(--backgroundcard);
+    text-shadow: 0.1em 0.1em 0.05em var(--bordalayout);
+}
+
+#textoIntro h1 {
+    margin-bottom: 10px;
+}
+
+/*PROJETOS*/
+#projetos h2 {
+    text-align: center;
+}
+
+#destacado2 {
+    color: var(--lightgraw);
+    font-weight: 800;
+}
+
+
 /* FOOTER */
 footer {
     background-color: var(--lightgraw);
@@ -231,6 +273,11 @@ footer {
 
     #social {
         margin: 0;
+    }
+
+    /*PROJETOS*/
+    #projetos h2 {
+        font-size: 1.2em;
     }
 
 }
@@ -293,6 +340,11 @@ footer {
         margin-top: 50px;
     }
 
+    /*PROJETOS*/
+    #projetos h2 {
+        font-size: 1.5em;
+    }
+
 }
 
 /* Tablet landscape             >>>>>>>>>>>>> */
@@ -311,6 +363,21 @@ footer {
         width: 150px;
         height: 150px;
         margin: 10px 0px 0px 10px;
+    }
+
+    /*intro*/
+    #destaqueIntro {
+        display: inline;
+    }
+
+    #destaqueIntro img {
+        margin-right: 50px;
+        border-radius: 50%;
+    }
+
+    /*PROJETOS*/
+    #projetos h2 {
+        font-size: 2em;
     }
 
 }
@@ -373,6 +440,18 @@ footer {
     .baner h2 {
         font-size: 1.5em;
         font-weight: 400;
+    }
+
+    /* introdução */
+    #intro {
+        background-attachment: fixed;
+    }
+
+    /*PROJETOS*/
+    #projetos h2 {
+        font-size: 2.5em;
+        font-weight: 500;
+        margin-bottom: 50px;
     }
 
 }
