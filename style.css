@@ -89,7 +89,7 @@ body {
 
 .button {
     text-decoration: none;
-    background-color: var(--corleyute);
+    background-color: var(--lightgraw);
     color: #f1f3f4;
     padding: 10px 80px;
     border-radius: 25px;
@@ -141,7 +141,7 @@ label {
 
 nav ul {
     list-style: none;
-    background-color: rgba(67, 67, 67, 0.9);
+    background-color: rgba(9, 9, 243, 0.411);
     height: 100vh;
     position: fixed;
     top: 80px;
@@ -157,7 +157,7 @@ nav ul {
 }
 
 nav ul li {
-    border-bottom: 0.5px solid var(--backgroundcard);
+    border-bottom: 0.5px solid var(--lightgraw);
     text-align: right;
     padding: 15px;
 }
@@ -201,7 +201,7 @@ main video {
 
 /* Introdução */
 #intro {
-    background: url(img/fundo.jpeg);
+    background: url(img/fundo5.png);
     background-size: cover;
     background-position: center;
 }
@@ -210,19 +210,33 @@ main video {
     display: none;
 }
 
+#destaqueIntro img {
+    width: 350px; height: 350px;
+}
+
 #textoIntro {
     color: var(--backgroundcard);
     text-shadow: 0.1em 0.1em 0.05em var(--bordalayout);
 }
 
-#textoIntro h1 {
+#textoIntro h2 {
     margin-bottom: 10px;
+    font-size: 1.7em;
+}
+
+#textoIntro p {
+    font-size: 1.5em;
+}
+
+.TopicosIntro {
+    margin-top: 10px;
+}
+
+.TopicosIntro img {
+    margin-right: 20px;
 }
 
 /*PROJETOS*/
-#projetos {
-    background: url(img/fundo2.jpeg);
-}
 
 #projetos h2 {
     text-align: center;
@@ -449,6 +463,10 @@ footer {
     /* introdução */
     #intro {
         background-attachment: fixed;
+    }
+
+    #intro p {
+        font-size: 1.5em;
     }
 
     /*PROJETOS*/
