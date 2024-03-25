@@ -40,6 +40,10 @@ body {
     padding: 50px 15px 50px 15px;
 }
 
+.ContainerEx {
+    margin: 0 auto;
+  }
+
 .flex,
 .flexmenu {
     display: flex;
@@ -59,6 +63,11 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+}
+
+.flexpage {
+    display: flex;
+    flex-direction: column;
 }
 
 /* cartão */
@@ -107,6 +116,28 @@ body {
     font-weight: 700;
 }
 
+/*banner das paginas */
+#banner {
+    height: 30vh;
+    background: url(img/fundo5.png);
+    background-size: cover;
+    background-position: center;
+    color: var(--lightgraw);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #banner {
+    font-size: 30px;
+  }  
+
+#imgSobre img {
+    margin-right: 50px;
+    border-radius: 50%;
+}
+
 /* topo */
 #topo {
     position: fixed;
@@ -141,7 +172,7 @@ label {
 
 nav ul {
     list-style: none;
-    background-color: rgba(9, 9, 243, 0.411);
+    background-color: rgba(69, 69, 92, 0.411);
     height: 100vh;
     position: fixed;
     top: 80px;
@@ -258,6 +289,28 @@ footer {
 #social {
     margin-bottom: 25px;
 }
+
+/* pagina sobre */
+#texto h2 {
+    font-weight: 500;
+    font-size: 1.8em;
+    text-align: left;
+    margin-top: 50px;
+  }
+  
+#texto p {
+    text-align: left;
+    margin-top: 15px;
+    font-size: 1.2em;
+  }
+
+#imgSobre img {
+    margin-right: 50px;
+    border-radius: 50%;
+    width: 310px;
+    height: 310px;
+}
+  
 
 /* Smartphone landscape         >>>>>>>>>>>>> */
 @media (min-width: 576px) {
@@ -398,6 +451,10 @@ footer {
         font-size: 2em;
     }
 
+    .flexpage {
+        flex-direction: row;
+    }
+
 }
 
 /* PCs ou notebooks HD          >>>>>>>>>>>>> */
@@ -474,6 +531,13 @@ footer {
         font-size: 2.5em;
         font-weight: 500;
         margin-bottom: 50px;
+    }
+
+    /*pagina sobre*/
+    #imgSobre img {
+        margin-right: 50px;
+        border-radius: 50%;
+        flex-direction: row-reverse;
     }
 
 }
