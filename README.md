@@ -6,6 +6,8 @@
 
 # Pet Squad
 Este repositorio hospeda o proejto do site petsquad.com.br
+
+![image](https://github.com/pedrohs01/pet-squad/assets/128723622/a7b811a4-7521-4deb-8e14-1b7d856924ad)
 ## Autor
 Pedro henrique dos santos
 ## Links utilizados
