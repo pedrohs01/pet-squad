@@ -253,11 +253,11 @@ main video {
 
 #textoIntro h2 {
     margin-bottom: 10px;
-    font-size: 1.7em;
+    font-size: 1.3em;
 }
 
 #textoIntro p {
-    font-size: 1.5em;
+    font-size: 1.3em;
     text-align: center;
 }
 
@@ -548,6 +548,16 @@ footer {
 
     #intro p {
         font-size: 1.5em;
+    }
+
+    #textoIntro h2 {
+        margin-bottom: 10px;
+        font-size: 1.7em;
+    }
+    
+    #textoIntro p {
+        font-size: 1.5em;
+        text-align: center;
     }
 
     /*PROJETOS*/
