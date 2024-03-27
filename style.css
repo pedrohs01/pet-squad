@@ -168,6 +168,7 @@ label {
     top: 10px;
     position: fixed;
     right: 10px;
+    z-index: 3;
 }
 
 nav ul {
@@ -294,6 +295,10 @@ footer {
 }
 
 /* pagina sobre */
+#sobre {
+    margin-bottom: 50px;
+}
+
 #texto h2 {
     font-weight: 500;
     font-size: 1.8em;
@@ -312,6 +317,8 @@ footer {
     border-radius: 50%;
     width: 310px;
     height: 310px;
+    border: 3px solid var(--lightgraw);
+    margin-top: 60px;
 }
 
 /* pagina Cuidados */
