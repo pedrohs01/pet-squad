@@ -248,6 +248,7 @@ main video {
 #textoIntro {
     color: var(--backgroundcard);
     text-shadow: 0.1em 0.1em 0.05em var(--bordalayout);
+    padding: 15px;
 }
 
 #textoIntro h2 {
@@ -305,6 +306,27 @@ footer {
   }
 
 #imgSobre img {
+    margin-right: 50px;
+    border-radius: 50%;
+    width: 310px;
+    height: 310px;
+}
+
+/* pagina Cuidados */
+#texto2 h2 {
+    font-weight: 500;
+    font-size: 1.8em;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+#texto2 p {
+    text-align: left;
+    margin-top: 15px;
+    font-size: 1.2em;
+  }
+
+#imgcuidados img {
     margin-right: 50px;
     border-radius: 50%;
     width: 310px;
