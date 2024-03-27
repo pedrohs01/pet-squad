@@ -258,10 +258,12 @@ main video {
 
 #textoIntro p {
     font-size: 1.5em;
+    text-align: center;
 }
 
 .TopicosIntro {
     margin-top: 10px;
+    text-align: center;
 }
 
 .TopicosIntro img {
