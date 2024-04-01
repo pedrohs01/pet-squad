@@ -341,7 +341,25 @@ footer {
     width: 310px;
     height: 310px;
 }
-  
+
+/* pagina Ajuda */
+#ajuda h3 {
+    font-size: 1.6em;
+    text-align: center;
+}
+
+#ajuda p {
+    font-size: 1.2em;
+}
+
+#intro h2 {
+    text-align: center;
+}
+
+#textoIntro ul {
+    text-align: center;
+}
+
 
 /* Smartphone landscape         >>>>>>>>>>>>> */
 @media (min-width: 576px) {
@@ -446,7 +464,7 @@ footer {
     #projetos h2 {
         font-size: 1.5em;
     }
-
+    
 }
 
 /* Tablet landscape             >>>>>>>>>>>>> */
@@ -580,7 +598,11 @@ footer {
         border-radius: 50%;
         flex-direction: row-reverse;
     }
-
+    /* pagina Ajuda */
+    #ajuda h3 {
+    font-size: 1.6em;
+    text-align: left;
+}
 }
 
 /* PCs ou notebooks Full HD +   >>>>>>>>>>>>> */
