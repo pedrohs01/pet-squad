@@ -282,6 +282,11 @@ main video {
     font-weight: 800;
 }
 
+.destacado2 {
+    color: var(--lightgraw);
+    font-weight: 800;
+}
+
 
 /* FOOTER */
 footer {
@@ -356,9 +361,10 @@ footer {
     text-align: center;
 }
 
-#textoIntro ul {
+#textoIntro p {
     text-align: center;
 }
+
 
 
 /* Smartphone landscape         >>>>>>>>>>>>> */
