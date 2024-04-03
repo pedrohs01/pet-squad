@@ -15,6 +15,7 @@
     --bordalayout: #000000;
     --corleyute: #f80000;
     --cortexto: #3b3a3a;
+    --corenviar: #4cec4c;
 }
 
 /* CSS RESET */
@@ -365,7 +366,40 @@ footer {
     text-align: center;
 }
 
+/* pagina Contato */
+form {
+    background-color: var(--lightgraw);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
 
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border: 1px solid var(--bordalayout);
+    border-radius: 5px;
+}
+
+input[type="submit"], input[type="reset"] {
+    background-color: var(--corenviar);
+    color: var(--bordalayout);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+input[type="reset"] {
+    background-color: var(--corleyute);
+}
 
 /* Smartphone landscape         >>>>>>>>>>>>> */
 @media (min-width: 576px) {

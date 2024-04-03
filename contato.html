@@ -23,7 +23,7 @@
             <label for="check">&#x2630;</label>
             <ul>
                 <li><a href="index.html">home</a></li>
-                <li><a href="seguranca.html">segurança</a></li>
+                <li><a href="seguranca.html">monitoramento</a></li>
                 <li><a href="sobre.html">sobre</a></li>
                 <li><a href="cuidados.html">cuidados</a></li>
                 <li><a href="ajuda.html">ajuda</a></li>
@@ -33,21 +33,30 @@
     </header>
     
     <!--Conteudo principal -->
-    <main class="container">
-       <h1>Contato</h1> 
+    <main id="banner">
+        <div  class="ContainerEx">
+            <h1>Contato</h1>
+        </div>
     </main>
 
-    <!-- em construção  -->
+    <!-- conteudo  -->
     <section class="container">
-         <div class="card">
-            <img src="img/stopp.png" alt="em construção">
-            <h3>Em construção</h3>
-            <p>Site em construção. Você pode acompanhar as novidades pelo
-            instagram.
-            </p>
-            <a href="https://www.instagram.com/peedro.henrique11/" target="_blank" class="button"> Saiba +</a>
-         </div> 
-
+        <h1>Formulário para Contato</h1>
+        <br>
+        <form action="mailto:pedroherique2000love@gmail.com?subjact=Contato">
+            <input type="text" name="nome" id="nome" placeholder="Nome"
+            required>
+            <br>
+            <input type="number" name="telefone" id="telefone" placeholder="Telefone"
+            required>
+            <br> 
+            <input type="email" name="email" id="email" placeholder="E-mail" required>
+            <br>
+            <textarea name="mensagem" id="Mensagem" cols="30" rows="10" placeholder="Mensagem"></textarea>
+            <br>
+            <input type="submit" value="Enviar">    
+            <input type="reset" value="limpar">
+        </form>
     </section>
    
     <!-- Rodapé -->
