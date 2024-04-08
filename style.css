@@ -69,6 +69,7 @@ body {
 .flexpage {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 /* cartão */
@@ -174,7 +175,7 @@ label {
 
 nav ul {
     list-style: none;
-    background-color: rgba(69, 69, 92, 0.411);
+    background-color: rgba(0, 0, 0, 0.411);
     height: 100vh;
     position: fixed;
     top: 80px;
@@ -182,6 +183,7 @@ nav ul {
     width: 70%;
     transition: all 0.5s;
     z-index: 1;
+    font-size: 1.5em;
 }
 
 /* Ativar o chackbox */
@@ -190,14 +192,14 @@ nav ul {
 }
 
 nav ul li {
-    border-bottom: 0.5px solid var(--lightgraw);
+    border-bottom: 0.5px solid var(--bordalayout);
     text-align: right;
     padding: 15px;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: var(--backgroundcard);
+    color: var(--lightgraw);
 }
 
 /*Baner*/
@@ -324,7 +326,7 @@ footer {
     width: 259px;
     height: 355px;
     border: 3px solid var(--lightgraw);
-    margin-top: 60px;
+    margin-top: 20px;
 }
 
 /* pagina Cuidados */
@@ -584,6 +586,7 @@ video {
         height: auto;
         background-color: var(--backgroundcard);
         margin-top: 50px;
+        font-size: 1em;
     }
 
     nav ul li {
