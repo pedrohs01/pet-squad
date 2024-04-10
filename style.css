@@ -327,6 +327,7 @@ footer {
     height: 355px;
     border: 3px solid var(--lightgraw);
     margin-top: 20px;
+    margin-left: 50px;
 }
 
 /* pagina Cuidados */
@@ -651,6 +652,7 @@ video {
         margin-right: 50px;
         border-radius: 50%;
         flex-direction: row-reverse;
+        margin-left: 0px;
     }
     /* pagina Ajuda */
     #ajuda h3 {
