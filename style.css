@@ -545,8 +545,11 @@ video {
     }
 
     #destaqueIntro img {
-        margin-right: 50px;
+        margin: 20px ;
+        margin-left: 200px;
         border-radius: 50%;
+        height: 200px;
+        width: 200px;
     }
 
     /*PROJETOS*/
